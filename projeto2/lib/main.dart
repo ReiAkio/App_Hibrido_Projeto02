@@ -48,20 +48,20 @@ class _MyHomePageState extends State<MyHomePage>
         bottom: TabBar(
           controller: _tabController,
           tabs: [
+            Tab(icon: Icon(Icons.search), text: 'Search'),
             Tab(icon: Icon(Icons.movie), text: 'Movies'),
             Tab(icon: Icon(Icons.tv), text: 'TV'),
             Tab(icon: Icon(Icons.person), text: 'People'),
-            Tab(icon: Icon(Icons.search), text: 'Search'),
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabController,
         children: [
+          SearchTab(),
           TrendingMoviesTab(),
           TrendingTVTab(),
           TrendingPeopleTab(),
-          SearchTab(),
         ],
       ),
     );
