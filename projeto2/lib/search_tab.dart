@@ -77,7 +77,6 @@ class _SearchTabState extends State<SearchTab> {
               var item = _searchResults[index];
               String imageUrl;
 
-              // Definindo a URL da imagem com base no tipo de busca
               if (_searchType == 'movies') {
                 imageUrl = item['poster_path'] != null
                     ? 'https://image.tmdb.org/t/p/w500${item['poster_path']}'
@@ -87,7 +86,6 @@ class _SearchTabState extends State<SearchTab> {
                     ? 'https://image.tmdb.org/t/p/w500${item['backdrop_path']}'
                     : '';
               } else {
-                // Para pessoas
                 imageUrl = item['profile_path'] != null
                     ? 'https://image.tmdb.org/t/p/w500${item['profile_path']}'
                     : '';

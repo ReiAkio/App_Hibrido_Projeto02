@@ -37,7 +37,6 @@ class TMDBService {
     }
   }
 
-  // Método para realizar buscas
   Future<dynamic> search(String query, String type) async {
     String typePath = type == 'movies'
         ? 'movie'

@@ -24,7 +24,6 @@ class _TrendingTVTabState extends State<TrendingTVTab> {
         _tvShows = tvShows['results'];
       });
     } catch (e) {
-      // Tratamento de erros ou exibição de uma mensagem
       print('Erro ao buscar séries de TV: $e');
     }
   }
